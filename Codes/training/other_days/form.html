@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form method="get">
+      <label for="name">Name </label>
+      <input placeholder="Enter your name" type="text" />
+      <br /><br />
+      <label for="password">Password</label>
+      <input
+        type="password"
+        pattern=".{8,}"
+        title="Enter atleast 8 characters"
+        name="password"
+      />
+      <br /><br />
+      <!-- <br /> -->
+      <label for="gender">Gender</label>
+      <input type="radio" name="gender" value="Male" /> Male
+      <input type="radio" name="gender" value="Female" /> Female
+      <br />
+      <label for="Semester">Semester</label>
+      <input type="radio" name="sem" value="1" />1<sup>st</sup>
+      <input type="radio" name="sem" value="1" />2<sup>nd</sup> <br /><br />
+      <label for="city">City</label>
+      <select name="city" id="city">
+        <optgroup label="MP">
+          <option value="JBP">Jabalpur</option>
+          <option value="MUM">Satna</option>
+          <option value="DEL">Bhopal</option>
+        </optgroup>
+        <optgroup label="Maharashtra">
+          <option value="MUM">Mumbai</option>
+          <option value="PUN">Pune</option>
+          <option value="AMR">Amravati</option>
+        </optgroup>
+      </select>
+      <br /><br />
+      <label for="text">Enter your comments</label>
+      <br /><br />
+      <textarea
+        name="text"
+        id="text"
+        cols="30"
+        rows="10"
+        placeholder="Enter Text Here"
+      ></textarea>
+      <br /><br />
+      <input type="submit" value="Submit It" />
+      <br /><br />
+      <input type="checkbox" name="terms" />I agree
+    </form>
+  </body>
+</html>

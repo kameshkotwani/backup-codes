@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="./login.css" />
+    <script src="./validate.js"></script>
+  </head>
+  <body>
+    <div class="loginForm">
+      <form action="data.php" method="POST">
+        <div class="row">
+          <div class="label">Username</div>
+          <div class="input">
+            <input id="name" type="text" name="uname" />
+          </div>
+          <div class="clear"></div>
+        </div>
+
+        <div class="row">
+          <div class="label">Password</div>
+          <div class="input">
+            <input id="pwd" type="password" name="pwd" />
+          </div>
+          <div class="clear"></div>
+        </div>
+
+        <!-- <div class="row">
+          <div class="input">
+            <div class="label">Type</div>
+            <select class="label select" name="User" id="user"
+              >User
+              <option value="User">User</option>
+              <option value="Admin">Admin</option>
+            </select>
+          </div>
+          <div class="clear"></div>
+        </div> -->
+
+        <div class="row">
+          <div class="input">
+            <input type="submit" name="submit" onclick="return validateForm()" />
+          </div>
+          <div class="clear"></div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

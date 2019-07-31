@@ -1,0 +1,49 @@
+body{
+	background-color:gray; 
+	/*background-image:url("../images/Penguins.jpg.jpg");
+	 background-size:80%;
+	background-repeat:no-repeat; /*repeat-x/repeat-y/no-repeat*/
+	background-attachment:fixed;
+}
+
+p{
+	font-family: Arial 'Times new roman' san-serif;
+	font-size:16px;
+	font-weight:bold;
+	font-style:italic;
+	text-align:justify; /*left/right/center*/
+	text-decoration:line-through; /*underline/overline*/
+	text-transform:lowercase; /*uppercase/lowercase*/
+	
+}
+
+.myDiv{
+	background-image:url("../images/Penguins.jpg.jpg");
+	height:300px;
+	width:300px;
+	background-position: 16% 13%;
+}
+
+input[type="button"]{
+	background-image: url(../images/button.png);
+    background-position: 12% 9%;
+    height: 74px;
+    width: 254px;
+    border: none;
+}
+
+input[type="button"]:hover{
+	background-position: 12% 35%;
+}
+
+.para{
+ font-size:50px;
+ color:blue;
+ font-weight:bold;
+}
+
+#para{
+	font-size:30px;
+	color:red;
+	font-weight:bold;
+}

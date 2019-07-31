@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Jquery</title>
+		<style>
+			.myDiv {
+				height: 300px;
+				width: 300px;
+				background-color: green;
+			}
+		</style>
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+		<script>
+			// Function to show the div
+			function showIt() {
+				$("div").slideToggle(5000);
+				$("div").slideUp(5000);
+				$("div").slideDown(5000);
+				$("div").fadeIn(5000);
+				$("div").fadeOut(5000);
+				$("div").fadeToggle(5000);
+				$("myDiv").html("<b>Welcome</b>");
+				alert($(".myDiv").html());
+				alert($("#myText").val());
+			}
+			// // Anonomys function to hide the div
+			// $(document).ready(function() {
+			// 	// $(".myDiv").hide(2000,showIt);
+			// });
+
+			function copyTextToDiv() {
+				let data = $("#myText").val();
+				$(".myDiv").html(data);
+			}
+		</script>
+	</head>
+	<body>
+		<!-- <input type="button" value="Click Me" onclick="showIt()" /> -->
+		<input
+			type="text"
+			id="myText"
+			onkeyup="copyTextToDiv()"
+			style="margin: 10px;"
+		/>
+		<div class="myDiv"></div>
+	</body>
+</html>

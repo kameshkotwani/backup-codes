@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("../images/Penguins.jpg.jpg");
+}
+
+.loginForm {
+  margin: 0 auto;
+  width: 500px;
+  /*background-color:skyblue;
+	background-color:rgb(129,58,150);
+	background-color:#c4c9e6;*/
+  background-color: rgba(129, 58, 150, 0.2);
+  padding: 20px;
+  /*opacity:0.5;*/
+}
+.clear {
+  clear: both;
+}
+.row {
+  margin-bottom: 20px;
+}
+
+.label {
+  float: left;
+  width: 20%;
+}
+
+.input {
+  float: left;
+  width: 80%;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 8px 0;
+}
